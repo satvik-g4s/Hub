@@ -1,0 +1,29 @@
+{
+  "categories": [
+    "Reports",
+    "Finance",
+    "Operations"
+  ],
+  "tools": [
+    {
+      "name": "System Ageing",
+      "category": "Reports",
+      "url": "https://system-ageing-g4s-satvik.streamlit.app/"
+    },
+    {
+      "name": "Pan India Cost Sheet",
+      "category": "Finance",
+      "url": "https://pan-india-cost-sheet.streamlit.app/"
+    },
+    {
+      "name": "Hour Recon I",
+      "category": "Operations",
+      "url": "https://hour-recon-first.streamlit.app/"
+    },
+    {
+      "name": "Billing Sheet Status",
+      "category": "Operations",
+      "url": "https://billing-sheet-status-g4s.streamlit.app/"
+    }
+  ]
+}

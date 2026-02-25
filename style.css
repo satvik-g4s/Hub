@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    display:flex;
+    background:#eef1f6;
+}
+
+/* TOPBAR */
+.topbar{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:60px;
+    background:#0f1e33;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+    z-index:1000;
+}
+
+.logo{
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.search-bar{
+    background:#1f2e47;
+    border:none;
+    padding:9px 18px;
+    border-radius:20px;
+    color:white;
+    width:230px;
+    outline:none;
+}
+
+.search-bar::placeholder{
+    color:#8fa2c2;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:230px;
+    background:#162235;
+    color:#a8b3c7;
+    padding-top:80px;
+    min-height:100vh;
+}
+
+.sidebar h3{
+    padding:0 20px 15px 20px;
+    font-size:12px;
+    letter-spacing:1.2px;
+    color:#6e7b92;
+}
+
+.category{
+    padding:12px 20px;
+    cursor:pointer;
+    border-left:4px solid transparent;
+    transition:0.2s;
+}
+
+.category:hover{
+    background:#1e2d44;
+    color:white;
+}
+
+.category.active{
+    background:#1e2d44;
+    color:white;
+    border-left:4px solid #4c8bf5;
+}
+
+/* MAIN */
+.main{
+    flex:1;
+    padding:100px 40px 40px 40px;
+}
+
+.main-header{
+    margin-bottom:25px;
+}
+
+.main-header h1{
+    font-size:26px;
+    color:#1a2b4c;
+}
+
+.tool-count{
+    margin-top:6px;
+    color:#7a8699;
+}
+
+/* GRID */
+.grid{
+    display: grid;
+    grid-auto-flow: column;
+    width: 240px;
+    gap: 10px;
+}
+
+/* TOOL CARD */
+.tool-card{
+    background:#1b2a41;
+    border-radius:16px;
+    padding:12px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    height:135px;
+    width:200px;
+    color:white;
+    transition:all 0.18s ease;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,0.04);
+}
+
+.tool-card:hover{
+    transform:translateY(-1px);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.356), /* Inner, less blurry glow */
+              0 0 30px rgba(0, 0, 255, 0.356), /* Outer, more blurry glow */
+              0 0 30px rgba(0, 0, 255, 0.356); /* Even more blurry glow for a soft edge */
+}
+
+.tool-icon{
+    width:25px;
+    height:25px;
+    background:#162f57;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:18px;
+}
+
+.tool-icon svg{
+    width:25px;
+    height:25px;
+    stroke:#4c8bf5;
+    stroke-width:2;
+    fill:none;
+}
+
+.tool-category{
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:1.2px;
+    color:#8fa2c2;
+    margin-top: 40px;
+}
+
+.tool-title{
+    font-size:15px;
+    font-weight:600;
+}
